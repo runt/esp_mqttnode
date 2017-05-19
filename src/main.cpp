@@ -95,7 +95,7 @@ void reconnect() {
 }
 
 void r_publish(const char *topic,const char *value){
-  char t[65];
+  char t[64];
   sprintf(t,"%s/%s",NODETOPIC,topic);
   client.publish(topic,value);
 }
